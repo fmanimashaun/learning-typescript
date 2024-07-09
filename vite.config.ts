@@ -3,13 +3,13 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: 'src',
-  base: '/pizza-menu-app/',
+  base: '/learning-typescript/',
   build: {
     outDir: '../dist',
+    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
-        create: resolve(__dirname, 'src/pages/create.html')
       }
     }
   },
